@@ -23,7 +23,7 @@
 <div id="app">
     <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
         <div class="container">
-            <a class="navbar-brand font-weight-bold" href="{{ url('/') }}">NEC Web</a>
+            <a class="navbar-brand font-weight-bold" href="{{ url('/') }}">Price Watch</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="{{ __('Toggle navigation') }}">
@@ -52,11 +52,11 @@
                     @else
                         @if(\Illuminate\Support\Facades\Auth::user()->role=="root")
                             <li class="nav-item">
-                                <a class="nav-link" href="{{url('client')}}">{{ __('Clients') }}</a>
+                                <a class="nav-link" href="{{url('client')}}">{{ __('Sellers') }}</a>
                             </li>
                         @endif
                         <li class="nav-item">
-                            <a class="nav-link" href="{{url('inspection')}}">{{ __('Inspections') }}</a>
+                            <a class="nav-link" href="{{url('product')}}">{{ __('Products') }}</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{url('user')}}">{{ __('Users') }}</a>

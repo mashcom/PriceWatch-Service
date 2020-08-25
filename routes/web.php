@@ -20,7 +20,7 @@ Auth::routes(['register' => false]);
 Route::middleware(['auth'])->group(function () {
     Route::get('/home', 'OrganisationController@index')->name('home');
     Route::resource('/client','OrganisationController')->middleware('root');
-    Route::resource('/inspection', 'InspectionController');
+    Route::resource('/product', 'ProductController');
     Route::resource('/passport', 'OauthClientController')->middleware('root');;
     Route::resource('/user', 'UserController');
 });

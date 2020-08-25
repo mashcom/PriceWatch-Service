@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="e5b616ac-6e4c-4d2a-97b8-c6da91d1d3e9" name="elearning" url="http://elearning.msu.ac.zw">
+        <fileTransfer host="elearning.msu.ac.zw" port="64371" rootFolder="/var/www/html/elearning" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="64371" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
